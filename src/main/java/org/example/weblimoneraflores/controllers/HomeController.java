@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
     @GetMapping("/")
     public String home() {
-        return "index"; // Apunta al archivo `index.html` en `templates`
+        return "inicio"; // Apunta al archivo `index.html` en `templates`
     }
 }
+
+
