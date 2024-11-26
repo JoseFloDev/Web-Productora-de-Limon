@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limonera Flores</title>
+  <link th:href="@{/css/styles.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Barra de navegación -->
+<header>
+  <div class="nav-container">
+    <button class="nav-button"><a th:href="@{/}">Inicio</a></button>
+    <button class="nav-button"><a th:href="@{/producto}">Producto</a></button>
+    <button class="nav-button"><a th:href="@{/contacto}">Contacto</a></button>
+  </div>
+</header>
+
+<!-- Sección de Introducción -->
+<section class="intro">
+  <h1>Limonera Flores</h1>
+  <h2>¿Quiénes somos?</h2>
+  <p>Somos una empresa familiar dedicada a la producción de limón persa de gran calidad. Nos destacamos por nuestra pasión, esfuerzo y compromiso con la excelencia, ofreciendo productos frescos y confiables.
+
+    Buscamos constantemente innovar y mejorar nuestros procesos para optimizar la producción, contribuir al desarrollo sostenible y garantizar la satisfacción de quienes confían en nosotros.</p>
+</section>
+
+<!-- Misión y Valores -->
+<section class="content">
+  <div class="block">
+    <h2>Misión</h2>
+    <p>Ofrecer excelencia a través de calidad, innovación y mejora constante, creando valor auténtico para nuestros clientes y comunidad.</p>
+  </div>
+  <div class="block">
+    <h2>Valores</h2>
+    <div class="valores">
+      <div class="valor">
+        <span>💡</span>
+        <h3>Integridad</h3>
+      </div>
+      <div class="valor">
+        <span>🔧</span>
+        <h3>Innovación</h3>
+      </div>
+      <div class="valor">
+        <span>🤝</span>
+        <h3>Trabajo en equipo</h3>
+      </div>
+      <div class="valor">
+        <span>🏅</span>
+        <h3>Calidad</h3>
+      </div>
+      <div class="valor">
+        <span>🌱</span>
+        <h3>Sustentabilidad</h3>
+      </div>
+      <div class="valor">
+        <span>🔄</span>
+        <h3>Adaptabilidad</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>
