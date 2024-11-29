@@ -2,8 +2,8 @@ package org.example.weblimoneraflores.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.JavaMailSenderImpl;
 
+//Configuracion para el envio de mensajes por correo electronico
 @Configuration
 public class MailConfig {
 

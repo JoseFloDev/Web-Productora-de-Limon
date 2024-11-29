@@ -32,5 +32,5 @@ build/
 ### VS Code ###
 .vscode/
 
-email.properties
+templates/email.properties
 

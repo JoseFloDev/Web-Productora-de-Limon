@@ -14,15 +14,17 @@ public class EmailService {
     @Autowired
     private JavaMailSenderImpl mailSender;
 
+    //Metodo para enviar los mensajes por correo electronico
     public void enviarCorreo(String destinatario, String remitente, String asunto, String contenido) {
         SimpleMailMessage email = new SimpleMailMessage();
+
+        //Se define l informacion necesaria de nuestro objeto email
         email.setTo(destinatario);
         email.setFrom(remitente);
         email.setSubject(asunto);
         email.setText(contenido);
 
-
-
+        //Se envia nuestro objeto email
         mail.send(email);
     }
 }
