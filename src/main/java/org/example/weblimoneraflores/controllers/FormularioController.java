@@ -24,10 +24,14 @@ public class FormularioController {
         String contenido = "Nombre: " + nombre + "\nEmail: " + email + "\nMensaje: " + mensaje;
 
 
-        //Se utiliza el servicio que creamos para enviar el mensaje por correo electronico
-        emailService.enviarCorreo(destinatario, remitente, asunto, contenido);
+        try{
+            //Se utiliza el servicio que creamos para enviar el mensaje por correo electronico
+            emailService.enviarCorreo(destinatario, remitente, asunto, contenido);
 
-        //Nos manda a la pagina HTML de confirmacion
-        return "confirmacion";
+            //Nos manda a la pagina HTML de confirmacion
+            return "confirmacion";
+        } catch (Exception e){
+            return "error";
+        }
     }
 }
