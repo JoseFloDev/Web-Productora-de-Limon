@@ -1,0 +1,197 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f8f3;
+    color: #333;
+}
+
+/* Barra de navegación */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+}
+
+.nav-button {
+    margin-left: 1rem;
+    background-color: transparent;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    background-color: #4CAF50;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.nav-button:hover a {
+    color: #fff;
+}
+
+/* Sección de Introducción */
+.intro {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #e8f5e9;
+    margin-bottom: 2rem;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #388E3C;
+}
+
+.intro h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección de Contenido */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.block {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.block h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #388E3C;
+}
+
+.block p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+.valores {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.valor {
+    background-color: #e8f5e9;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.valor:hover {
+    transform: scale(1.05);
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Contenedor del formulario */
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Espaciado entre los campos */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Espaciado entre etiqueta y campo */
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000; /* Cambiar a negro */
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 600px; /* Limita el ancho máximo */
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50; /* Cambio de color al enfocar */
+    background-color: #e8f5e9; /* Fondo más claro al enfocar */
+}
+
+textarea {
+    resize: vertical; /* Permite cambiar el tamaño solo verticalmente */
+}
+
+.btn-enviar {
+    width: fit-content;
+    align-self: flex-start; /* Alinea el botón al inicio */
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Centrar "Envíanos un mensaje" */
+.block h2 {
+    text-align: center; /* Centra el texto */
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #388E3C;
+}
